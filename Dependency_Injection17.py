@@ -1,0 +1,18 @@
+# Dependency Injection
+from fastapi import FastAPI, Depends
+
+app = FastAPI()
+
+
+def get_current_user():
+    return{
+        "user": "Mohit"
+    }
+
+@app.get("/profile")
+def profile(user = Depends(get_current_user)):
+    return user
+
+@app.get("/dashboard")
+def dashboard(user = Depends(get_current_user)):
+    return user

@@ -41,5 +41,5 @@ def updated_user(user_id: int, user:User, notify:bool = False):
         "error": "User not found"
     }
         
-# 1:28:00
+
     
