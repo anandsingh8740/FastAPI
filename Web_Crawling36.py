@@ -12,7 +12,7 @@ soup = BeautifulSoup(requests.text, "html.parser")
 print(soup.title.text)
 '''
 
-#### Using FastAPI WEb Crawling.
+#### Using FastAPI WEb Crawling.#######
 from fastapi import FastAPI
 import requests
 from bs4 import BeautifulSoup
